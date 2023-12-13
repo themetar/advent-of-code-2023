@@ -15,8 +15,13 @@ def number_segments(length, segments, prepend = 0, &block)
   end
 end
 
-number_segments(6, [2, 2]) { |num| puts num.to_s(2).rjust(6, '0') }
+# number_segments(6, [2, 2]) { |num| puts num.to_s(2).rjust(6, '0') }
 
-puts 
+# puts 
 
-number_segments(10, [1, 3, 2]) { |num| puts num.to_s(2).rjust(10, '0') }
+# number_segments(10, [1, 3, 2]) { |num| puts num.to_s(2).rjust(10, '0') }
+
+
+require_relative "../solutions/helpers"
+
+get_lines(__dir__ + "/../inputs/12.txt").each { |ln| puts ln unless ln['.'] }
