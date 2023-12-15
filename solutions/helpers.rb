@@ -3,3 +3,7 @@ def get_lines(filepath)
     file.readlines(chomp: true)
   end
 end
+
+def get_input_lines(n)
+  get_lines(__dir__ + "/../inputs/#{n}.txt")
+end
